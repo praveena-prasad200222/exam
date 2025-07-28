@@ -2,10 +2,10 @@ void main() {
   Map<String, dynamic> details = {
     "course": "Dart Basics",
     "duration": 30,
-    "isFree": true,
+    "isFree": true
   };
 
-  print("Key: course, Value: ${details["course"]}");
-  print("Key: duration, Value: ${details["duration"]}");
-  print("Key: isFree, Value: ${details["isFree"]}");
+  details.forEach((key, value) {
+    print("Key: $key, Value: $value");
+  });
 }
